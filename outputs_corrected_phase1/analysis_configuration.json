@@ -1,0 +1,39 @@
+{
+  "alignment": {
+    "alignment_version": "drop_repeated_onset0_then_map_40x10_blocks_v1",
+    "tr_seconds": 1.5,
+    "trs_per_clip": 10,
+    "trs_per_run": 400,
+    "runs_per_subject": 12,
+    "clips_per_run": 40
+  },
+  "subjects": [
+    "sub-001",
+    "sub-002",
+    "sub-003",
+    "sub-004",
+    "sub-005"
+  ],
+  "feature_definition": "Mean of 10 derivative response volumes per retained 15-second clip; onset-0 repeated event removed from every training run; no HRF-delay tuning.",
+  "primary_model": {
+    "variance_threshold": 0.0,
+    "feature_selection": "SelectKBest(f_classif)",
+    "k": 1300,
+    "scaling": "StandardScaler fitted inside each CV fold",
+    "classifier": "SVC",
+    "kernel": "linear",
+    "C": 1.0,
+    "gamma": "scale"
+  },
+  "outer_validation": "LeaveOneGroupOut with run number as group",
+  "random_seed": 42,
+  "software": {
+    "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.8.0"
+  },
+  "permutation_tests_requested": true,
+  "n_permutations": 1000,
+  "nested_cv_requested": false
+}

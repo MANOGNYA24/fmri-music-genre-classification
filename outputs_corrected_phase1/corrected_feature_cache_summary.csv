@@ -1,0 +1,6 @@
+subject,n_clips,n_voxels,removed_nonfinite_voxels,n_runs,n_genres,source,elapsed_seconds
+sub-001,480,60784,0,12,10,rebuilt,2.8
+sub-002,480,53927,0,12,10,rebuilt,3.01
+sub-003,480,64700,0,12,10,rebuilt,4.05
+sub-004,480,61899,0,12,10,rebuilt,3.81
+sub-005,480,53421,0,12,10,rebuilt,3.26
